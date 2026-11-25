@@ -438,12 +438,6 @@ html, body { background: #fff; }
 .reveal .diagram-slide .workbook { margin-bottom: 12px; }
 .reveal img.trial-flow-image { display: block; width: 100%; height: 452px; max-width: 100%; max-height: none; object-fit: contain; margin: 0 auto; border: 0; box-shadow: none; background: transparent; }
 .reveal .diagram-links { margin-top: 12px; margin-bottom: 0; }
-.reveal .procedure-paragraph { padding: 24px 27px; margin: 26px 0; }
-.reveal .procedure-paragraph p { font-size: 30px; line-height: 1.48; }
-.reveal .procedure-checks { margin: 28px 0; }
-.reveal .method-example { background: #f4f7f9; border-left: 5px solid var(--teal); padding: 14px 18px; margin: 16px 0; }
-.reveal .method-example h3 { font-size: 23px; margin-bottom: 7px; }
-.reveal .method-example p { font-size: 22px; line-height: 1.34; margin: 0; }
 .reveal .steps > div { margin: 0 0 24px; }
 .reveal .steps p { margin-bottom: 0; font-size: 26px; }
 .reveal .steps.compact > div { margin-bottom: 21px; }
@@ -521,6 +515,13 @@ html, body { background: #fff; }
 .reveal .adaptation-slide .template-table { margin: 12px 0 16px; }
 .reveal .adaptation-slide .take-home { margin: 16px 0 0; }
 .reveal .work-board .after-break-preview { color: var(--teal); margin-top: 20px; }
+.reveal .workbook-check h2 { margin-bottom: 20px; }
+.reveal .workbook-check .take-home { margin: 0 0 18px; padding: 12px 16px; font-size: 22px; }
+.reveal .workbook-check .workbook { margin: 0 0 12px; }
+.reveal .completion-table { font-size: 22px; margin: 10px 0 14px; }
+.reveal .completion-table th, .reveal .completion-table td { padding: 10px 14px; }
+.reveal .completion-table th:first-child { width: 24%; }
+.reveal .workbook-check .now-links { font-size: 19px; line-height: 1.35; margin-top: 16px; }
 </style>
     <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -570,10 +571,10 @@ on its rationale can continue it; a group already signed off can begin
 the method workbook and plan its design.
 </p>
 <p>
-After the break, give a brief walkthrough of the supplied tasks, one
-trial sequence and a procedure paragraph, then show the
-template-adaptation options. No individual responses or common progress
-reports are required. Students remain at different stages.
+After the break, give a brief walkthrough of the supplied tasks and one
+trial sequence, then show the template-adaptation options. No individual
+responses or common progress reports are required. Students remain at
+different stages.
 </p>
 <p>
 Both workbooks and ethics need approval before students modify Gorilla.
@@ -697,10 +698,9 @@ before you modify Gorilla.
 <aside class="notes">
 <p>
 This introduces the short shared walkthrough after the break. The next
-slide opens the Gorilla resources, followed by the trial sequence, the
-procedure example and the adaptation options. Keep the demonstration
-brief; students do not need to watch an editor tutorial or complete a
-common product.
+slide opens the Gorilla resources, followed by the trial sequence and
+the adaptation options. Keep the demonstration brief; students do not
+need to watch an editor tutorial or complete a common product.
 </p>
 <p>
 Groups can continue at their current stage afterwards. If a rationale
@@ -828,9 +828,9 @@ Describe the order, timing and response.
 <p>
 Choose the task using the buttons above the diagram. All three task
 diagrams are available on this one slide, with one displayed at a time.
-Use Prospect Theory as the shared example, then continue to the
-procedure paragraph. There is no need to walk the whole class through
-every task.
+Use Prospect Theory as the shared example to identify the order, timing
+and response, then continue to the adaptation options. There is no need
+to walk the whole class through every task.
 </p>
 <div data-trial-notes="prospect">
 <p>
@@ -864,67 +864,6 @@ manipulations, practice and trial order used in the final study.
 The original supplied diagrams are retained unchanged. Students should
 describe the final version they actually use, rather than copying a
 template description without checking it.
-</p>
-</aside>
-</section>
-<section id="procedure-example" class="slide level2">
-<h2>From the trial sequence to your method</h2>
-<p class="workbook">
-Example: describing a Prospect Theory trial
-</p>
-<div class="method-example procedure-paragraph">
-<p>
-Each trial began with a <strong>500 ms blank screen</strong>. A monetary
-scenario and two options then appeared with a <strong>preference
-slider</strong> (0 = definitely A; 100 = definitely B). Participants
-selected a rating and <strong>clicked Next to advance</strong>.
-</p>
-</div>
-<div class="resource-tasks procedure-checks">
-<div>
-<h3>
-Order
-</h3>
-<p>
-What appeared, and when?
-</p>
-</div>
-<div>
-<h3>
-Timing
-</h3>
-<p>
-Timed or participant-paced?
-</p>
-</div>
-<div>
-<h3>
-Response
-</h3>
-<p>
-What did participants do?
-</p>
-</div>
-</div>
-<aside class="notes">
-<p>
-The paragraph models the level of procedural detail, not a full method
-section. Relate each part back to the diagram: the timed blank, the
-response screen and the participant’s action. Describe the final study
-in the past tense when reporting what was done.
-</p>
-<p>
-The current template has no fixed response-screen time limit. Its slider
-runs from 0 (definitely A) to 100 (definitely B); A is the guaranteed
-option and B is the uncertain option in the supplied scenarios.
-</p>
-<p>
-Students also need to explain their manipulations and levels, score and
-coding, stimulus selection, practice, experimental trials, blocks,
-ordering, recruitment and ethics. The supplied spreadsheet has 40
-experimental trial rows with paired scenario versions in separate
-blocks. These are starting-template details, not prescribed final trial
-numbers.
 </p>
 </aside>
 </section>
@@ -1756,86 +1695,117 @@ in the final study.
 </p>
 </aside>
 </section>
-<section id="now-reference" class="slide level2">
-<h2>Use NOW for the next decision</h2>
-<table class="resources-table">
+<section id="now-reference" class="slide level2 workbook-check">
+<h2 class="workbook-check">Before you leave: workbook check</h2>
+<p class="take-home">
+<strong>Rationale workbook · sections 1–6:</strong> complete all
+sections, including the final self-check, and get tutor sign-off today.
+</p>
+<p class="workbook">
+After rationale sign-off, work on the Method workbook at your group’s
+stage:
+</p>
+<table class="completion-table">
 <thead>
 <tr>
 <th>
-Your next question
+Method sections
 </th>
 <th>
-Go to NOW → Week 10
+What to record
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<th>
+1, 3–5
+</th>
 <td>
-Design details and order effects?
-</td>
-<td>
-<a href="https://now.ntu.ac.uk/d2l/le/content/1209763/viewContent/15107126/View" target="_blank" rel="noopener">Experimental
-design: Overview</a>
-</td>
-</tr>
-<tr>
-<td>
-Task constraints and stimuli?
-</td>
-<td>
-<a href="https://now.ntu.ac.uk/d2l/le/content/1209763/viewContent/15107127/View" target="_blank" rel="noopener">The
-experimental tasks</a>
+Your task, outcome measure and both manipulations: levels,
+implementation and justification.
 </td>
 </tr>
 <tr>
+<th>
+6–8
+</th>
 <td>
-Recruitment target and justification?
-</td>
-<td>
-<a href="https://now.ntu.ac.uk/d2l/le/content/1209763/viewContent/15107130/View" target="_blank" rel="noopener">Sample
-size and power analysis</a>
-</td>
-</tr>
-<tr>
-<td>
-Ready to modify the approved plan?
-</td>
-<td>
-<a href="https://now.ntu.ac.uk/d2l/le/content/1209763/viewContent/15107129/View" target="_blank" rel="noopener">Getting
-started with Gorilla</a>
+Design and trial order, selected stimuli and materials, and controls for
+confounds.
 </td>
 </tr>
 <tr>
+<th>
+2, 9–11
+</th>
 <td>
-Workbook and ethics documents?
-</td>
-<td>
-<a href="https://now.ntu.ac.uk/d2l/le/lessons/1209763/topics/15271018" target="_blank" rel="noopener">Experimental
-→ Important files</a>
+Sample, procedure, ethics and evaluation of your design choices as your
+plan develops.
 </td>
 </tr>
 </tbody>
 </table>
 <p class="small">
-For extra demographic questions, use
-<a href="https://now.ntu.ac.uk/d2l/le/content/1209763/viewContent/15107128/View" target="_blank" rel="noopener">Demographic
-information</a> and discuss them with a tutor.
+Record which method sections are complete, what still needs deciding and
+your next actions. The whole method workbook need not be finished today.
+</p>
+<p class="now-links">
+NOW:
+<a href="https://now.ntu.ac.uk/d2l/le/content/1209763/viewContent/15107126/View" target="_blank" rel="noopener">Design</a>
+·
+<a href="https://now.ntu.ac.uk/d2l/le/content/1209763/viewContent/15107127/View" target="_blank" rel="noopener">Tasks
+and stimuli</a> ·
+<a href="https://now.ntu.ac.uk/d2l/le/content/1209763/viewContent/15107130/View" target="_blank" rel="noopener">Sample
+size</a> ·
+<a href="https://now.ntu.ac.uk/d2l/le/content/1209763/viewContent/15107129/View" target="_blank" rel="noopener">Gorilla
+guides</a> ·
+<a href="https://now.ntu.ac.uk/d2l/le/lessons/1209763/topics/15271018" target="_blank" rel="noopener">Workbooks
+and ethics</a>
 </p>
 <aside class="notes">
 <p>
-These URLs and section titles were extracted from the NOW contents
-supplied in this folder. They require the usual NOW access. The slide is
-a navigation aid for independent work, not a list to teach through in
-the introduction.
+Required end-of-session completion: the first, Literature Review and
+Rationale Workbook, sections 1–6, must be complete and signed off by at
+least one tutor. The section numbers come from the supplied workbook:
+model/design, first literature search, interaction rationale, aims and
+hypotheses, integrated rationale, and final self-check.
 </p>
 <p>
-For Gorilla, use the supplied templates and the videos on displays,
-spreadsheets and adding objects. Retain coding compatible with the
-supplied analysis, and check approved changes to the response or score
-against the Week 8 guidance. Those implementation details belong in the
-approved group’s next steps rather than a whole-class software
-demonstration today.
+The Method Workbook has no shared section-completion deadline in the
+supplied Week 10 guidance. The original slides ask students to progress
+it and potentially finalise it. The section groups here are a practical
+map for today’s work after rationale sign-off, not an extra requirement
+to finish a fixed set before leaving.
+</p>
+<p>
+Method section 1 covers the task; section 3 the outcome and scoring;
+sections 4–5 the two manipulations; section 6 the design, blocks and
+trials; section 7 materials and stimulus selection; section 8 controls.
+These map closely to the session’s focus on operationalising the design
+and choosing stimuli. Groups can work on a difficult decision in any of
+these sections rather than rushing through the list.
+</p>
+<p>
+Method section 2 covers the sample and justification; section 9 the
+procedure and instructions; section 10 ethics and tutor approval of
+stimuli; section 11 design evaluation and the replication check.
+Progress these as the relevant decisions become clear. Ethics work can
+proceed alongside design work; it does not need to wait until every
+earlier section is finished.
+</p>
+<p>
+Before leaving, each group should record its completed sections,
+unresolved decisions, who will do the remaining work and any feedback or
+approvals still needed. Both workbooks and ethics must be approved
+before modifying Gorilla, and the experiment also needs approval before
+data collection.
+</p>
+<p>
+The NOW links retain the design, task, sample-size, Gorilla and document
+guidance. For additional demographic questions, use
+<a href="https://now.ntu.ac.uk/d2l/le/content/1209763/viewContent/15107128/View">Demographic
+information</a> and discuss the need with a tutor.
 </p>
 </aside>
 </section>
